@@ -1,0 +1,191 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@AlphaHowl13 
+mathaisjustin
+/
+Muscles.inc
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Muscles.inc/styles.css
+@mathaisjustin
+mathaisjustin fixing the deployment
+Latest commit 1232839 10 days ago
+ History
+ 1 contributor
+311 lines (301 sloc)  4.45 KB
+   
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+/* All Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar section*/
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #cc4b2c;
+  line-height: 75px;
+  padding: 0px 100px;
+  position: fixed;
+  z-index: 1;
+}
+nav .logo {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+nav .logo p {
+  float: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 32px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid black;
+  color: #c0d96f;
+}
+/* Image slider section */
+.slider {
+  overflow: hidden;
+  height: 590px;
+  width: 100%;
+}
+.slider figure div {
+  float: left;
+  width: 20%;
+}
+.slider figure img {
+  width: 100%;
+  float: left;
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0;
+  animation: 30s slide infinite;
+}
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  12% {
+    left: -100%;
+  }
+  22% {
+    left: -100%;
+  }
+  24% {
+    left: -100%;
+  }
+  34% {
+    left: -200%;
+  }
+  36% {
+    left: -300%;
+  }
+  46% {
+    left: -300%;
+  }
+  48% {
+    left: -400%;
+  }
+  58% {
+    left: -400%;
+  }
+  60% {
+    left: -300%;
+  }
+  70% {
+    left: -300%;
+  }
+  72% {
+    left: -200%;
+  }
+  82% {
+    left: -200%;
+  }
+  84% {
+    left: -100%;
+  }
+  94% {
+    left: -100%;
+  }
+  96% {
+    left: 0%;
+  }
+}
+
+/* FOOTER section */
+.footer {
+  background-color: #290f09;
+  color: #fffafa;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer_title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.footer_description {
+  margin-bottom: 3rem;
+}
+.footer_social {
+  margin-bottom: 3rem;
+}
+.footer_link {
+  display: inline-flex;
+  background-color: #cc4b2c;
+  color: #fffafa;
+  font-size: 1, 1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.footer_link:hover {
+  background-color: #fffafa;
+  color: #cc4b2c;
+}
+.footer_copy {
+  font-size: 0.75rem;
+  color: #54423d;
+}

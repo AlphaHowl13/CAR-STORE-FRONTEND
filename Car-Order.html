@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Order Details</title>
+</head>
+<body>
+    <h1>Customer Order Details</h1>
+    <form action="">
+        <div id="next1" class="desc">   
+                <div class="div-details">
+                    <h4>
+                        <H2>Enter Your Details</H2>
+                    </h4>
+                    <div>
+                        <input type="radio" id="Finance" name="payment" value="Finance"
+                               checked>
+                        <label for="Finance">Finance</label>
+                      </div>
+                      
+                      <div>
+                        <input type="radio" id="Cash" name="payment" value="Cash">
+                        <label for="Cash">Cash</label>
+                      </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    Name:
+                                </td>
+                                <td>
+                                    <input type="text" name="event_name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Contact Number: 
+                                </td>
+                                <td>
+                                    <input type="text" name="event_contact">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Address: 
+                                </td>
+                                <td>
+                                    <input type="text" name="address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   Pincode: 
+                                </td>
+                                <td>
+                                    <input type="text" name="pincode">
+                                </td>
+        
+                        </table>
+                        <br>
+                <button type="button" onclick="dayNavigation('next');" data-role="none" class="slick-prev" aria-label="Next" tabindex="0" role="button">Next</button>                       
+                    </div>
+        
+           <div id="next2" class="desc" style="display: none;">
+           <p> inside of next 2 </p>   
+           <button type="button" onclick="dayNavigation('prev');" data-role="none" class="slick-next" aria-label="Previous" tabindex="0" role="button">Previous</button>
+           <button type="button" onclick="dayNavigation('next');" data-role="none" class="slick-prev" aria-label="Next" tabindex="0" role="button">Next</button>
+            </div>
+        </form>
+    
+</body>
+</html>
